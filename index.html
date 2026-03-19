@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Seu Presente ❤️</title>
+<title>Your Gift ❤️</title>
 
 <style>
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, sans-serif;
 background:#fdeaea;
 text-align:center;
 }
@@ -18,6 +18,12 @@ padding:40px;
 
 h1{
 color:#8b3a3a;
+font-size:32px;
+}
+
+p{
+font-size:18px;
+color:#444;
 }
 
 button{
@@ -30,14 +36,20 @@ border-radius:10px;
 cursor:pointer;
 }
 
-#surpresa{
+button:hover{
+background:#a14a4a;
+}
+
+#surprise{
 display:none;
 margin-top:30px;
 }
 
 img{
 max-width:400px;
+width:90%;
 border-radius:15px;
+margin-top:20px;
 }
 </style>
 
@@ -47,32 +59,33 @@ border-radius:15px;
 
 <div class="container">
 
-<h1>Feliz Dia dos Namorados ❤️</h1>
+<h1>Happy Valentine’s Day ❤️</h1>
 
-<p>Eu tenho um presente especial pra você...</p>
+<p>I have a special gift for you...</p>
 
-<button onclick="mostrar()">
-Clique aqui 💌
+<button onclick="showSurprise()">
+Click here 💌
 </button>
 
-<div id="surpresa">
+<div id="surprise">
 
-<h2>Surpresa!!! 🎁</h2>
+<h2>Surprise!!! 🎁</h2>
 
-<img src="foto.jpg">
+<img src="foto.png" alt="Our photo">
 
-<p>Te amo muito ❤️</p>
+<p>
+I love you so much ❤️<br>
+I can’t wait to share many beautiful moments together.
+</p>
 
 </div>
 
 </div>
 
 <script>
-
-function mostrar(){
-document.getElementById("surpresa").style.display="block";
+function showSurprise(){
+document.getElementById("surprise").style.display="block";
 }
-
 </script>
 
 </body>
